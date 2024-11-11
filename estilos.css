@@ -180,3 +180,26 @@ footer {
     font-size: 0.9em;
     border-top: 1px solid #444;
 }
+@media (max-width: 768px) {
+    body, .container, header nav, .section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero h1, .hero p {
+        text-align: center;
+    }
+
+    .tickets, .gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
